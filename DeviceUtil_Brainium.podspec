@@ -1,3 +1,4 @@
+# read for development information https://guides.cocoapods.org/making/making-a-cocoapod.html
 Pod::Spec.new do |s|
   s.name         = "DeviceUtil_Brainium"
   s.version      = "1.0.0"
