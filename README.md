@@ -1,5 +1,7 @@
 # DeviceUtil
 
+This is a fork of https://github.com/InderKumarRathore/DeviceUtil that Brainium Studios plans to maintain in order to be a bit more reactive when new devices come out.
+
 ### For **Swift** please use [DeviceGuru](https://github.com/InderKumarRathore/DeviceGuru) as below
 ```sh
 pod 'DeviceGuru'
@@ -17,7 +19,7 @@ Search for DeviceUtil lib <br>
 Copy the pod dependency and add that to your pod file. e.g.
 
 ```sh
-pod 'DeviceUtil'
+pod 'DeviceUtil_Brainium'
 ```
 
 ### Usage
