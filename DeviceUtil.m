@@ -128,9 +128,9 @@ NSString* const x86_64_Sim  = @"x86_64";
   self = [super init];
   if (self) {
     // get the bundle of the DeviceUtil if it's main bundle then it returns main bundle
-    // if it's DeviceUtil.framework then it returns the DeviceUtil.framework bundle
+    // if it's DeviceUtil_Brainium.framework then it returns the DeviceUtil_Brainium.framework bundle
     NSBundle *deviceUtilTopBundle = [NSBundle bundleForClass:[self class]];
-    NSURL *url = [deviceUtilTopBundle URLForResource:@"DeviceUtil" withExtension:@"bundle"];
+    NSURL *url = [deviceUtilTopBundle URLForResource:@"DeviceUtil_Brainium" withExtension:@"bundle"];
     NSBundle *deviceUtilBundle;
     if (url != nil) {
       // DeviceUtil bundle is present
