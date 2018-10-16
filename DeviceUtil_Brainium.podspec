@@ -1,7 +1,7 @@
 # read for development information https://guides.cocoapods.org/making/making-a-cocoapod.html
 Pod::Spec.new do |s|
   s.name         = "DeviceUtil_Brainium"
-  s.version      = "1.2"
+  s.version      = "1.3"
   s.summary          = "DeviceUtil helps identifying the exact harware type of the device. e.g. iPhone 6 or iPhone 6s."
   s.homepage         = "https://github.com/BrainiumLLC/DeviceUtil.git"
   s.license      = "MIT (example)"

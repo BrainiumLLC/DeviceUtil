@@ -239,7 +239,7 @@ NSString* const x86_64_Sim  = @"x86_64";
   if ([hardware isEqualToString:iPod5_1])      return IPOD_TOUCH_5G;
   if ([hardware isEqualToString:iPod7_1])      return IPOD_TOUCH_6G;
   
-  if ([hardware isEqualToString:iPad1_1])      return IPAD;
+  if ([hardware isEqualToString:iPad1_1])      return IPAD_1;
   if ([hardware isEqualToString:iPad1_2])      return IPAD_3G;
   if ([hardware isEqualToString:iPad2_1])      return IPAD_2_WIFI;
   if ([hardware isEqualToString:iPad2_2])      return IPAD_2;
