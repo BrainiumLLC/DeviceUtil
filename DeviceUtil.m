@@ -4,7 +4,7 @@
 //  Created by Inder Kumar Rathore on 19/01/13.
 //  Copyright (c) 2013 Rathore. All rights reserved.
 //
-//  Hardware string can be found @http://www.everymac.com
+//  Hardware string can be found @https://www.everymac.com
 //
 
 #import "DeviceUtil.h"
@@ -113,6 +113,10 @@ NSString* const Watch3_1 = @"Watch3,1";
 NSString* const Watch3_2 = @"Watch3,2";
 NSString* const Watch3_3 = @"Watch3,3";
 NSString* const Watch3_4 = @"Watch3,4";
+NSString* const Watch4_1 = @"Watch4,1";
+NSString* const Watch4_2 = @"Watch4,2";
+NSString* const Watch4_3 = @"Watch4,3";
+NSString* const Watch4_4 = @"Watch4,4";
 
 
 NSString* const i386_Sim    = @"i386";
@@ -137,7 +141,7 @@ NSString* const x86_64_Sim  = @"x86_64";
       deviceUtilBundle = [NSBundle bundleWithURL:url];
     }
     else {
-      // pick the main buncle
+      // pick the main bundle
       deviceUtilBundle = deviceUtilTopBundle;
     }
     NSString *path = [deviceUtilBundle pathForResource:@"DeviceList" ofType:@"plist"];
@@ -156,6 +160,14 @@ NSString* const x86_64_Sim  = @"x86_64";
   sysctl(name, 2, hw_machine, &size, NULL, 0);
   NSString *hardware = [NSString stringWithUTF8String:hw_machine];
   free(hw_machine);
+  
+  // Check if the hardware is simulator
+  if ([hardware isEqualToString:i386_Sim] || [hardware isEqualToString:x86_64_Sim]) {
+    NSString *deviceID = [[[NSProcessInfo processInfo] environment] objectForKey:@"SIMULATOR_MODEL_IDENTIFIER"];
+    if (deviceID != nil) {
+      hardware = deviceID;
+    }
+  }
   return hardware;
 }
 
@@ -173,7 +185,8 @@ NSString* const x86_64_Sim  = @"x86_64";
  */
 
 
-/// This method returns the Platform enum depending upon harware string
+
+/// This method returns the Platform enum depending upon hardware string
 ///
 ///
 /// - returns: `Platform` type of the device
@@ -302,6 +315,10 @@ NSString* const x86_64_Sim  = @"x86_64";
   if ([hardware isEqualToString:Watch3_2])     return APPLE_WATCH_SERIES_3_42_CELLULAR;
   if ([hardware isEqualToString:Watch3_3])     return APPLE_WATCH_SERIES_3_38;
   if ([hardware isEqualToString:Watch3_4])     return APPLE_WATCH_SERIES_3_42;
+  if ([hardware isEqualToString:Watch4_1])     return APPLE_WATCH_SERIES_4_40;
+  if ([hardware isEqualToString:Watch4_2])     return APPLE_WATCH_SERIES_4_44;
+  if ([hardware isEqualToString:Watch4_3])     return APPLE_WATCH_SERIES_4_40_CELLULAR;
+  if ([hardware isEqualToString:Watch4_4])     return APPLE_WATCH_SERIES_4_44_CELLULAR;
   
   if ([hardware isEqualToString:i386_Sim])     return SIMULATOR;
   if ([hardware isEqualToString:x86_64_Sim])   return SIMULATOR;
