@@ -184,6 +184,7 @@ extern NSString* const iPhone10_5;
 extern NSString* const iPhone10_6;
 extern NSString* const iPhone11_2;
 extern NSString* const iPhone11_4;
+extern NSString* const iPhone11_6;
 extern NSString* const iPhone11_8;
 
 extern NSString* const iPod1_1;
@@ -252,6 +253,14 @@ extern NSString* const Watch2_3;
 extern NSString* const Watch2_4;
 extern NSString* const Watch2_6;
 extern NSString* const Watch2_7;
+extern NSString* const Watch3_1;
+extern NSString* const Watch3_2;
+extern NSString* const Watch3_3;
+extern NSString* const Watch3_4;
+extern NSString* const Watch4_1;
+extern NSString* const Watch4_2;
+extern NSString* const Watch4_3;
+extern NSString* const Watch4_4;
 
 extern NSString* const i386_Sim;
 extern NSString* const x86_64_Sim;
