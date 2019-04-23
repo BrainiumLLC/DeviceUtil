@@ -101,7 +101,11 @@ iPad Mini 3  | ```ipad_MINI_3_WIFI``` | ```iPad4,7```
 iPad Mini 3 Cellular  | ```ipad_MINI_3_WIFI_CELLULAR``` | ```iPad4,8```
 iPad Mini 4  | ```ipad_MINI_4_WIFI``` | ```iPad5,1```
 iPad Mini 4 Cellular  | ```ipad_MINI_4_WIFI_CELLULAR``` | ```iPad5,2```
+iPad Mini 5  |```ipad_MINI_5_WIFI```|```iPad11,1```
+iPad Mini 5 Cellular  |```ipad_MINI_5_WIFI_CELLULAR```|```iPad11,2```
 iPad Air 2  | ```ipad_AIR_2_WIFI``` | ```iPad5,3```
+iPad Air 3  |```ipad_AIR_3_WIFI```|```iPad11,3```
+iPad Air 3 Cellular  |```ipad_AIR_3_WIFI_CELLULAR```|```iPad11,4```
 iPad Pro 9.7 Wifi Only  | ```ipad_PRO_97_WIFI``` | ```iPad6,3```
 iPad Pro 9.7 Wifi + Cellular  | ```ipad_PRO_97_WIFI_CELLULAR``` | ```iPad6,4```
 iPad Pro  | ```ipad_PRO_WIFI``` | ```iPad6,7```
