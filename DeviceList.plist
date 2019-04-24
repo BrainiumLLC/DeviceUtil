@@ -604,6 +604,34 @@
 		<key>name</key>
 		<string>iPad Pro 12.9-Inch 1TB (Wi-Fi/Cell - 3rd Gen)</string>
 	</dict>
+	<key>iPad11,1</key>
+<dict>
+	<key>version</key>
+	<real>11.1</real>
+	<key>name</key>
+	<string>iPad Mini 5 (Wi-Fi Only)</string>
+</dict>
+<key>iPad11,2</key>
+<dict>
+	<key>version</key>
+	<real>11.2</real>
+	<key>name</key>
+	<string>iPad Mini 5 (Wi-Fi/Cellular)</string>
+</dict>
+<key>iPad11,3</key>
+<dict>
+	<key>version</key>
+	<real>11.3</real>
+	<key>name</key>
+	<string>iPad Air 3 (Wi-Fi Only)</string>
+</dict>
+<key>iPad11,4</key>
+<dict>
+	<key>version</key>
+	<real>11.4</real>
+	<key>name</key>
+	<string>iPad Air 3 (Wi-Fi/Cellular)</string>
+</dict>
 	<key>appleTV1,1</key>
 	<dict>
 		<key>version</key>
