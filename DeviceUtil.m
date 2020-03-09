@@ -373,7 +373,7 @@ NSString* const x86_64_Sim  = @"x86_64";
     //log message that your device is not present in the list
     [self logMessage:hardware];
     
-    return nil;
+    return hardware;
   }
 }
 
