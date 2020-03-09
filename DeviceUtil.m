@@ -46,6 +46,9 @@ NSString* const iPhone11_2 = @"iPhone11,2";
 NSString* const iPhone11_4 = @"iPhone11,4";
 NSString* const iPhone11_6 = @"iPhone11,6";
 NSString* const iPhone11_8 = @"iPhone11,8";
+NSString* const iPhone12_1 = @"iPhone12,1";
+NSString* const iPhone12_3 = @"iPhone12,3";
+NSString* const iPhone12_5 = @"iPhone12,5";
 
 NSString* const iPod1_1 = @"iPod1,1";
 NSString* const iPod2_1 = @"iPod2,1";
@@ -256,6 +259,10 @@ NSString* const x86_64_Sim  = @"x86_64";
   if ([hardware isEqualToString:iPhone11_4])    return IPHONE_XS_MAX;
   if ([hardware isEqualToString:iPhone11_6])    return IPHONE_XS_MAX_CN;
   if ([hardware isEqualToString:iPhone11_8])    return IPHONE_XR;
+    
+  if ([hardware isEqualToString:iPhone12_1])    return IPHONE_11;
+  if ([hardware isEqualToString:iPhone12_3])    return IPHONE_11_PRO;
+  if ([hardware isEqualToString:iPhone12_5])    return IPHONE_11_PRO_MAX;
 
   if ([hardware isEqualToString:iPod1_1])      return IPOD_TOUCH_1G;
   if ([hardware isEqualToString:iPod2_1])      return IPOD_TOUCH_2G;
@@ -443,6 +450,9 @@ NSString* const x86_64_Sim  = @"x86_64";
     case IPHONE_8_PLUS_CN:
     case IPHONE_X:
     case IPHONE_X_CN:
+    case IPHONE_11:
+    case IPHONE_11_PRO:
+    case IPHONE_11_PRO_MAX:
       return CGSizeMake(4032, 3024);
 
     case IPOD_TOUCH_4G:
