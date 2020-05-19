@@ -137,6 +137,7 @@ typedef NS_ENUM(NSUInteger, Hardware) {
   APPLE_TV_3G,
   APPLE_TV_3_2G,
   APPLE_TV_4G,
+  APPLE_TV_4K,
   
   APPLE_WATCH_38,
   APPLE_WATCH_42,
@@ -253,11 +254,16 @@ extern NSString* const iPad8_5;
 extern NSString* const iPad8_6;
 extern NSString* const iPad8_7;
 extern NSString* const iPad8_8;
+extern NSString* const iPad11_1;
+extern NSString* const iPad11_2;
+extern NSString* const iPad11_3;
+extern NSString* const iPad11_4;
 extern NSString* const AppleTV1_1;
 extern NSString* const AppleTV2_1;
 extern NSString* const AppleTV3_1;
 extern NSString* const AppleTV3_2;
 extern NSString* const AppleTV5_3;
+extern NSString* const AppleTV6_2;
 extern NSString* const Watch1_1;
 extern NSString* const Watch1_2;
 extern NSString* const Watch2_3;
@@ -299,6 +305,11 @@ extern NSString* const x86_64_Sim;
  e.g. if the hardware string is 5,1 then hardware number would be 5.1
  */
 - (float)hardwareNumber;
+
+/**
+ This method returns if we are running in the simulator
+ */
+- (BOOL)isSimulator;
 
 /** This method returns the resolution for still image that can be received
  from back camera of the current device. Resolution returned for image oriented landscape right. **/
