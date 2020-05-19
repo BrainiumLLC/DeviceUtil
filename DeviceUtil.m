@@ -111,11 +111,6 @@ NSString* const iPad11_2 = @"iPad11,2";
 NSString* const iPad11_3 = @"iPad11,3";
 NSString* const iPad11_4 = @"iPad11,4";
 
-NSString* const iPad11_1 = @"iPad11,1";
-NSString* const iPad11_2 = @"iPad11,2";
-NSString* const iPad11_3 = @"iPad11,3";
-NSString* const iPad11_4 = @"iPad11,4";
-
 NSString* const AppleTV1_1 = @"AppleTV1,1";
 NSString* const AppleTV2_1 = @"AppleTV2,1";
 NSString* const AppleTV3_1 = @"AppleTV3,1";
