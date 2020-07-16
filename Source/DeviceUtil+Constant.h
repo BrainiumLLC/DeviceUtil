@@ -1,6 +1,6 @@
 
 typedef NS_ENUM(NSUInteger, Hardware) {
-
+    NOT_AVAILABLE,
 
     IPHONE_2G,
     IPHONE_3G,
@@ -131,7 +131,12 @@ typedef NS_ENUM(NSUInteger, Hardware) {
     APPLE_TV_4K,
 
     SIMULATOR,
-    UNKNOWN
+    UNKNOWN,
+
+    HARDWARE_MAX,
+
+    // Brainium backwards compatibility
+    IPAD_1 = IPAD,
 };
 
 extern NSString* const AppleTV1_1;
