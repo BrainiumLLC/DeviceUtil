@@ -8,10 +8,12 @@ Pod::Spec.new do |s|
   s.license          = { :type => "MIT", :file => "LICENSE.txt" }
   s.author             = { "BrainiumLLC" => "jonathan@brainiumstudios.com" }
   s.source       = { :git => "https://github.com/BrainiumLLC/DeviceUtil.git", :tag => "#{s.version}" }
-  s.source_files     = "Source/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
-  s.resource_bundles = {s.name => ['Source/DeviceList.plist']}
   s.requires_arc     = true
   s.ios.deployment_target = '7.0'
   s.tvos.deployment_target = '9.0'
+
+  # bundle name is 'DeviceUtil', _not_ 'Brainium_DeviceUtil'. this fact is assumed by DeviceUtil.m
+  s.resource_bundles = {"DeviceUtil" => ['Source/DeviceList.plist']}
+  s.source_files     = "Source/*.{h,m}"
+  s.exclude_files = "Classes/Exclude"
 end
