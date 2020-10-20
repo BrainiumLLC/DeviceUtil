@@ -911,6 +911,24 @@
 		<key>enum</key>
 		<string>IPAD_AIR_3_WIFI_CELLULAR</string>
 	</dict>
+	<key>iPad11,6</key>
+	<dict>
+		<key>version</key>
+		<real>11.6</real>
+		<key>name</key>
+		<string>iPad 10.2-Inch 8th Gen (Wi-Fi Only)</string>
+		<key>enum</key>
+		<string>IPAD_8_WIFI</string>
+	</dict>
+	<key>iPad11,7</key>
+	<dict>
+		<key>version</key>
+		<real>11.7</real>
+		<key>name</key>
+		<string>iPad 10.2-Inch 8th Gen (Wi-Fi/Cellular)</string>
+		<key>enum</key>
+		<string>IPAD_8_WIFI_CELLULAR</string>
+	</dict>
 	<key>AppleTV1,1</key>
 	<dict>
 		<key>version</key>

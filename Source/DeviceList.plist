@@ -219,6 +219,20 @@
 		<key>version</key>
 		<real>11.4</real>
 	</dict>
+	<key>iPad11,6</key>
+	<dict>
+		<key>name</key>
+		<string>iPad 10.2-Inch 8th Gen (Wi-Fi Only)</string>
+		<key>version</key>
+		<real>11.6</real>
+	</dict>
+	<key>iPad11,7</key>
+	<dict>
+		<key>name</key>
+		<string>iPad 10.2-Inch 8th Gen (Wi-Fi/Cellular)</string>
+		<key>version</key>
+		<real>11.7</real>
+	</dict>
 	<key>iPad2,1</key>
 	<dict>
 		<key>name</key>
